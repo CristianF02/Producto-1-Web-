@@ -17,6 +17,22 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
 header h1 {
     margin: 0;
     font-size: 2.5em;
@@ -52,11 +68,24 @@ nav ul li a:hover {
     color: #ffd54f;
 }
 
+/* Estilos del contenido principal */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    flex: 1;
+    margin-right: 20px;
+}
+
 /* Estilos de las secciones */
 .section {
     padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px;
+    margin-bottom: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -91,17 +120,102 @@ nav ul li a:hover {
     transform: translateY(-5px);
 }
 
+/* Estilos de la sección "Ciudades donde he vivido" */
+
+.cities-lived ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cities-lived li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.city-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right:15px ;
+    margin-bottom: 15px;
+}
+.city-info{
+    flex: 1;
+    margin-top: 10px;
+}
+
+.city-info h3{
+    margin-top: 0;
+    color: #1a237e;
+}
+
+.cities-lived {
+    flex: 0 0 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.cities-lived h2 {
+    color: #000000;
+    border-bottom: 2px solid #3949ab;
+    padding-bottom: 10px;
+}
+
+
+.cities-lived h3 {
+    color: #1a237e;
+    margin-bottom: 5px;
+}
+
 /* Estilos del footer */
 footer {
-    background-color: #1a237e;
+    background-color: #47495e;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 2px 0;
     margin-top: 40px;
 }
 
 /* Estilos responsive */
+@media (max-width: 768px) {
+    .cities-lived li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .city-image{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    main {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .cities-lived {
+        flex: 1;
+    }
+}
+
 @media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
     header h1 {
         font-size: 2em;
     }
