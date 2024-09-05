@@ -144,6 +144,10 @@ main {
     margin-right:15px ;
     margin-bottom: 15px;
 }
+.city-image:hover{
+    transform: scale(1.1);
+}
+
 .city-info{
     flex: 1;
     margin-top: 10px;
@@ -232,4 +236,25 @@ footer {
     .interests li {
         width: 100%;
     }
+}
+.Redes_Sociales {
+    margin-top: auto;
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+    
+}
+
+.Redes_Sociales a {
+    margin: 0 10px;
+}
+
+.Redes_Sociales a i {
+    color: #3498db; /* Color de los iconos */
+    font-size: 20px;
+    text-decoration: none;
+}
+.Redes_Sociales a i:hover {
+    color: #ffd54f; /* Cambia el color al pasar el cursor */
+    transform: scale(1.1);
 }
