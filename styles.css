@@ -180,8 +180,8 @@ main {
 
 /* Estilos del footer */
 footer {
-    background-color: #47495e;
-    color: #fff;
+    background-color: #1a237e;
+    color: #000000;
     text-align: center;
     padding: 2px 0;
     margin-top: 40px;
@@ -256,5 +256,5 @@ footer {
 }
 .Redes_Sociales a i:hover {
     color: #ffd54f; /* Cambia el color al pasar el cursor */
-    transform: scale(1.1);
+    transform: scale(2.1);
 }
